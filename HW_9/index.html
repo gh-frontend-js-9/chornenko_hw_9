@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tamagochi</title>
+</head>
+<body>
+<select id="status">
+    <option  value="FluffyKitty">
+        FluffyKitty
+    </option>
+    <option  value="LazyPug">
+        LazyPug
+    </option>
+    <option  value= "Ninja">
+        Ninja
+    </option>
+
+</select>
+<div>
+    <div><img src="https://s.tcdn.co/18f/4d5/18f4d57e-c910-3aef-9523-9a0d3bb60468/5.png" width="250px" height="250px"></div>
+    <div>
+        <div>Time Life:<span id="timeLife"> </span></div>
+        <div><meter id="progressEnergy"  max="100"></meter> Food: <strong><span id="food"></span> </strong>
+            <button  onclick="TamagochiGame.toEat()">Eat</button>
+            <button  onclick="TamagochiGame.toBuyFood()">Buy food</button></div>
+
+        <div><meter id="progressHappy"  max="100"></meter> Happiness: <strong><span id="happiness"></span></strong>
+            <button  onclick="TamagochiGame.toRun()">Run</button></div>
+
+        <div><meter id="progressClean"  max="100"></meter> Clean: <strong><span id="clean"></span></strong>
+            <button  onclick="TamagochiGame.toWash()">Wash</button></div>
+
+        <div><meter id="progressHealth"  max="100"></meter> Health: <strong><span id="health"></span></strong>
+            <button  onclick="TamagochiGame.toVisitDoctor()">Visit doctor</button></div>
+
+        <div><meter id="progressSocialization"  max="100"></meter> Socialization: <strong>
+            <span id="socialization"></span></strong><button  onclick="TamagochiGame.goBar()">Go to bar</button>
+            <button  onclick="TamagochiGame.toStartBusiness()">Start a business</button></div>
+
+        <div><meter id="progressMoney"  max="100"></meter> Money: <strong><span id="money"></span></strong>
+            <button  onclick="TamagochiGame.goWork()">Go to work</button></div>
+    </div>
+
+    <div>
+        <button  id="start" onclick="TamagochiGame.initTypeGame()" >Start</button>
+        <button  id="restart" onclick="location.reload()">Restart</button>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
